@@ -35,7 +35,7 @@ def greatest_distance(stations: dict):
 
     for m in stations:
         for n in stations:
-            x_km = (stations[m][0] -stations[n][0]) * 55.26
+            x_km = (stations[m][0] - stations[n][0]) * 55.26
             y_km = (stations[m][1] - stations[n][1]) * 111.2
             distance_km = math.sqrt(x_km**2 + y_km**2)
             results.append((m, n, distance_km))
